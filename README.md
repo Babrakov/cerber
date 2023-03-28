@@ -1,2 +1,2 @@
 # cerber
-The unified data system
+Backend for the unified data system
