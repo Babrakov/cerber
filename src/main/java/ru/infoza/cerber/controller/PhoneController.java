@@ -21,7 +21,7 @@ public class PhoneController {
         return (List<Phone>) phoneRepository.findAll();
     }
 
-    @PostMapping("/users")
+    @PostMapping("/phones")
     void addPhone(@RequestBody Phone phone) {
         phoneRepository.save(phone);
     }
