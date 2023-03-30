@@ -16,15 +16,15 @@ public class CerberApplication {
 		SpringApplication.run(CerberApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner init(PhoneRepository phoneRepository) {
-		return args -> {
-			Stream.of("9184109310", "9064333655", "9282071984").forEach(number -> {
-				Phone phone = new Phone(number, number + " some text");
-				phoneRepository.save(phone);
-			});
-			phoneRepository.findAll().forEach(System.out::println);
-		};
-	}
+//	@Bean
+//	CommandLineRunner init(PhoneRepository phoneRepository) {
+//		return args -> {
+//			Stream.of("9184109310", "9064333655", "9282071984").forEach(number -> {
+//				Phone phone = new Phone(number, number + " some text");
+//				phoneRepository.save(phone);
+//			});
+//			phoneRepository.findAll().forEach(System.out::println);
+//		};
+//	}
 
 }
