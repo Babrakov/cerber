@@ -1,13 +1,7 @@
 package ru.infoza.cerber;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import ru.infoza.cerber.entity.Phone;
-import ru.infoza.cerber.repository.PhoneRepository;
-
-import java.util.stream.Stream;
 
 @SpringBootApplication
 public class CerberApplication {
